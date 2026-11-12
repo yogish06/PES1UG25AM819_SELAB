@@ -1,0 +1,50 @@
+$ coverage run --branch --include=bowling_alley.py -m pytest BranchCoverageTest_bowling_alley.py -v
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.6.0 -- C:\Users\yogis\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\yogis\.gemini\antigravity\scratch\PES1UG25AM819_SELAB\PES1UG25AM819_LAB6
+plugins: anyio-4.14.1, langsmith-0.14.4, platformdirs-4.12.2, asyncio-1.4.1, typeguard-4.6.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 32 items
+
+BranchCoverageTest_bowling_alley.py::test_weekday_booking PASSED         [  3%]
+BranchCoverageTest_bowling_alley.py::test_open_frame PASSED              [  6%]
+BranchCoverageTest_bowling_alley.py::test_weekend_large_group_league PASSED [  9%]
+BranchCoverageTest_bowling_alley.py::test_weekend_single_game_five_players PASSED [ 12%]
+BranchCoverageTest_bowling_alley.py::test_weekday_five_players PASSED    [ 15%]
+BranchCoverageTest_bowling_alley.py::test_four_players_no_surcharge PASSED [ 18%]
+BranchCoverageTest_bowling_alley.py::test_league_member_discount PASSED  [ 21%]
+BranchCoverageTest_bowling_alley.py::test_league_discount_no_shoes PASSED [ 25%]
+BranchCoverageTest_bowling_alley.py::test_shoes_equal_players_allowed PASSED [ 28%]
+BranchCoverageTest_bowling_alley.py::test_unknown_day_type PASSED        [ 31%]
+BranchCoverageTest_bowling_alley.py::test_invalid_games_zero PASSED      [ 34%]
+BranchCoverageTest_bowling_alley.py::test_invalid_players_zero PASSED    [ 37%]
+BranchCoverageTest_bowling_alley.py::test_invalid_players_seven PASSED   [ 40%]
+BranchCoverageTest_bowling_alley.py::test_six_players_allowed PASSED     [ 43%]
+BranchCoverageTest_bowling_alley.py::test_too_many_shoe_rentals PASSED   [ 46%]
+BranchCoverageTest_bowling_alley.py::test_strike PASSED                  [ 50%]
+BranchCoverageTest_bowling_alley.py::test_strike_with_open_bonus PASSED  [ 53%]
+BranchCoverageTest_bowling_alley.py::test_spare PASSED                   [ 56%]
+BranchCoverageTest_bowling_alley.py::test_spare_with_zero_first_roll PASSED [ 59%]
+BranchCoverageTest_bowling_alley.py::test_gutter_frame PASSED            [ 62%]
+BranchCoverageTest_bowling_alley.py::test_invalid_roll_negative_first PASSED [ 65%]
+BranchCoverageTest_bowling_alley.py::test_invalid_roll_first_above_ten PASSED [ 68%]
+BranchCoverageTest_bowling_alley.py::test_invalid_roll_negative_second PASSED [ 71%]
+BranchCoverageTest_bowling_alley.py::test_invalid_frame_over_ten PASSED  [ 75%]
+BranchCoverageTest_bowling_alley.py::test_frame_total_nine_is_open PASSED [ 78%]
+BranchCoverageTest_bowling_alley.py::test_no_lanes_free PASSED           [ 81%]
+BranchCoverageTest_bowling_alley.py::test_no_lanes_free_with_kids_still_waits PASSED [ 84%]
+BranchCoverageTest_bowling_alley.py::test_kids_get_bumper_lane PASSED    [ 87%]
+BranchCoverageTest_bowling_alley.py::test_big_group_two_lanes PASSED     [ 90%]
+BranchCoverageTest_bowling_alley.py::test_big_group_one_lane_waits PASSED [ 93%]
+BranchCoverageTest_bowling_alley.py::test_six_players_standard_lane PASSED [ 96%]
+BranchCoverageTest_bowling_alley.py::test_standard_lane PASSED           [100%]
+
+============================= 32 passed in 0.22s ==============================
+
+$ coverage report -m
+Name               Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------
+bowling_alley.py      35      0     26      0   100%
+--------------------------------------------------------------
+TOTAL                 35      0     26      0   100%
