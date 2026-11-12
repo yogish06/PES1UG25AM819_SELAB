@@ -1,0 +1,33 @@
+$ coverage run --include=bowling_alley.py -m pytest CodeCoverageTest_bowling_alley.py -v
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.6.0 -- C:\Users\yogis\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\yogis\.gemini\antigravity\scratch\PES1UG25AM819_SELAB\PES1UG25AM819_LAB6
+plugins: anyio-4.14.1, langsmith-0.14.4, platformdirs-4.12.2, asyncio-1.4.1, typeguard-4.6.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 15 items
+
+CodeCoverageTest_bowling_alley.py::test_weekday_booking PASSED           [  6%]
+CodeCoverageTest_bowling_alley.py::test_open_frame PASSED                [ 13%]
+CodeCoverageTest_bowling_alley.py::test_weekend_large_group_league PASSED [ 20%]
+CodeCoverageTest_bowling_alley.py::test_unknown_day_type PASSED          [ 26%]
+CodeCoverageTest_bowling_alley.py::test_invalid_booking PASSED           [ 33%]
+CodeCoverageTest_bowling_alley.py::test_too_many_shoe_rentals PASSED     [ 40%]
+CodeCoverageTest_bowling_alley.py::test_strike PASSED                    [ 46%]
+CodeCoverageTest_bowling_alley.py::test_spare PASSED                     [ 53%]
+CodeCoverageTest_bowling_alley.py::test_invalid_roll PASSED              [ 60%]
+CodeCoverageTest_bowling_alley.py::test_invalid_frame PASSED             [ 66%]
+CodeCoverageTest_bowling_alley.py::test_no_lanes_free PASSED             [ 73%]
+CodeCoverageTest_bowling_alley.py::test_kids_get_bumper_lane PASSED      [ 80%]
+CodeCoverageTest_bowling_alley.py::test_big_group_two_lanes PASSED       [ 86%]
+CodeCoverageTest_bowling_alley.py::test_big_group_waits_for_lanes PASSED [ 93%]
+CodeCoverageTest_bowling_alley.py::test_standard_lane PASSED             [100%]
+
+============================= 15 passed in 0.19s ==============================
+
+$ coverage report -m
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+bowling_alley.py      35      0   100%
+------------------------------------------------
+TOTAL                 35      0   100%
